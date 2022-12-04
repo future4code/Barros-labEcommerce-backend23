@@ -1,14 +1,13 @@
 import {Response, Request} from 'express'
+import connection from '../connection'
 import { characters } from '../data'
 
-export default function(req:Request, res:Response):void{
+export default async function(req:Request, res:Response):Promise<void>{
     const  { id }  = req.params
 
-    const index:number = characters.findIndex(
-        character => character.id === Number(id)
-    )
-    if(index > -1){
-        characters.splice(index, 1)
-    }
+    const result = await connection(`character`)
+    .delete()
+    .where({id})
+     
    res.status(200).end()
 }
