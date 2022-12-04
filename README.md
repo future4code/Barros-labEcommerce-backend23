@@ -4,7 +4,7 @@
 
 *https://documenter.getpostman.com/view/24759772/2s8YzMY5jd*
 
-#### Link da documentação
+#### Link do deploy
 
 *https://revisao-backend-zesl.onrender.com*
 
