@@ -14,7 +14,7 @@
 
 #### O quê  Não Funciona 
 
-*Tratamento dos erros não realizados*
+*Tratamento dos erros não foram 100% realizados*
 
 ## Autor
 
